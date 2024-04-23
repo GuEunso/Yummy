@@ -62,10 +62,6 @@
                 {
                     "type": "minecraft:item",
                     "name": "yummy:floating_stick"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "yummy:mark_fireball"
                 }
             ],
             "conditions": [
