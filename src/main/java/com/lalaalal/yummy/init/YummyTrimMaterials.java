@@ -25,7 +25,7 @@ public class YummyTrimMaterials {
     public static final ResourceKey<TrimMaterial> DIAMOND = registerKey("soul_infused_diamond");
     public static final ResourceKey<TrimMaterial> LAPIS = registerKey("soul_infused_lapis");
     public static final ResourceKey<TrimMaterial> AMETHYST = registerKey("soul_infused_amethyst");
-    public static final ResourceKey<TrimMaterial> FANCY_DIAMOND = registerKey("soul_infused_fancy_diamond");
+    public static final ResourceKey<TrimMaterial> NECTARIUM = registerKey("soul_infused_nectarium");
     private static ResourceKey<TrimMaterial> registerKey(String name) {
         return ResourceKey.create(Registries.TRIM_MATERIAL, new ResourceLocation(YummyMod.MOD_ID, name));
     }
@@ -38,7 +38,7 @@ public class YummyTrimMaterials {
         register(context, DIAMOND, YummyItems.SOUL_INFUSED_DIAMOND.getHolder().get(), Style.EMPTY.withColor(1155126), 0.7F);
         register(context, LAPIS, YummyItems.SOUL_INFUSED_LAPIS.getHolder().get(), Style.EMPTY.withColor(10116294), 1.0F);
         register(context, AMETHYST, YummyItems.SOUL_INFUSED_AMETHYST.getHolder().get(), Style.EMPTY.withColor(4288151), 0.9F);
-        register(context, FANCY_DIAMOND, YummyItems.SOUL_INFUSED_FANCY_DIAMOND.getHolder().get(), Style.EMPTY.withColor(15527148), 0.2F);
+        register(context, NECTARIUM, YummyItems.SOUL_INFUSED_NECTARIUM.getHolder().get(), Style.EMPTY.withColor(15527148), 0.2F);
 
     }
 

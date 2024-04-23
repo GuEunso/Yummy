@@ -143,7 +143,7 @@ public class YummyItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> SOUL_INFUSED_AMETHYST = ITEMS.register("soul_infused_amethyst",
             () -> new Item(new Item.Properties().fireResistant()));
-    public static final RegistryObject<Item> SOUL_INFUSED_FANCY_DIAMOND = ITEMS.register("soul_infused_fancy_diamond",
+    public static final RegistryObject<Item> SOUL_INFUSED_NECTARIUM = ITEMS.register("soul_infused_nectarium",
             () -> new Item(new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> SOUL_INFUSED_REDSTONE_SWORD
@@ -160,8 +160,8 @@ public class YummyItems {
             = registerSoulInfusedSword("lapis", -4, 0);
     public static final RegistryObject<Item> SOUL_INFUSED_AMETHYST_SWORD
             = registerSoulInfusedSword("amethyst", 0, 0);
-    public static final RegistryObject<Item> SOUL_INFUSED_FANCY_DIAMOND_SWORD
-            = registerSoulInfusedSword("fancy_diamond", 0, 0);
+    public static final RegistryObject<Item> SOUL_INFUSED_NECTARIUM_SWORD
+            = registerSoulInfusedSword("nectarium", 0, 0);
 
 
 

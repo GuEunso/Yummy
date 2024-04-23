@@ -1,9 +1,9 @@
 {
     "replace": false,
     "values": [
-        "yummy:fancy_diamond_block",
-        "yummy:fancy_diamond_ore",
-        "yummy:deepslate_fancy_diamond_ore",
+        "yummy:nectarium_block",
+        "yummy:nectarium_ore",
+        "yummy:deepslate_nectarium_ore",
         "yummy:polluted_block",
         "yummy:soul_crafter",
         "yummy:purified_soul_metal_block",
@@ -14,7 +14,7 @@
         "yummy:soul_infused_diamond_block",
         "yummy:soul_infused_lapis_block",
         "yummy:soul_infused_amethyst_block",
-        "yummy:soul_infused_fancy_diamond_block",
+        "yummy:soul_infused_nectarium_block",
         "yummy:fake_gold_block",
         "yummy:amethyst_shard_block"
     ]

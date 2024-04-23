@@ -55,7 +55,7 @@ public class YummyTabs {
                 entries.accept(YummyItems.SOUL_INFUSED_DIAMOND_SWORD.get());
                 entries.accept(YummyItems.SOUL_INFUSED_LAPIS_SWORD.get());
                 entries.accept(YummyItems.SOUL_INFUSED_AMETHYST_SWORD.get());
-                entries.accept(YummyItems.SOUL_INFUSED_FANCY_DIAMOND_SWORD.get());
+                entries.accept(YummyItems.SOUL_INFUSED_NECTARIUM_SWORD.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_SWORD.get());
                 entries.accept(YummyItems.SOUL_INFUSED_REDSTONE.get());
                 entries.accept(YummyItems.SOUL_INFUSED_COPPER.get());
@@ -64,7 +64,7 @@ public class YummyTabs {
                 entries.accept(YummyItems.SOUL_INFUSED_DIAMOND.get());
                 entries.accept(YummyItems.SOUL_INFUSED_LAPIS.get());
                 entries.accept(YummyItems.SOUL_INFUSED_AMETHYST.get());
-                entries.accept(YummyItems.SOUL_INFUSED_FANCY_DIAMOND.get());
+                entries.accept(YummyItems.SOUL_INFUSED_NECTARIUM.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_METAL.get());
                 entries.accept(YummyBlocks.SOUL_INFUSED_REDSTONE_BLOCK.get());
                 entries.accept(YummyBlocks.SOUL_INFUSED_COPPER_BLOCK.get());

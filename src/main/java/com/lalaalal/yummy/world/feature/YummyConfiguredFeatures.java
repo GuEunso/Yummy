@@ -34,9 +34,9 @@ import java.util.OptionalInt;
 
 public class YummyConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> EBONY_KEY = registerKey("ebony");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FANCY_DIAMOND_ORE_SMALL = registerKey("fancy_diamond_ore_small");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FANCY_DIAMOND_ORE_LARGE = registerKey("fancy_diamond_ore_large");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FANCY_DIAMOND_ORE_BURIED = registerKey("fancy_diamond_ore_buried");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NECTARIUM_ORE_SMALL = registerKey("nectarium_ore_small");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NECTARIUM_ORE_LARGE = registerKey("nectarium_ore_large");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NECTARIUM_ORE_BURIED = registerKey("nectarium_ore_buried");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         register(context, EBONY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -49,14 +49,14 @@ public class YummyConfiguredFeatures {
 
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        List<OreConfiguration.TargetBlockState> FancyDiamondOres = List.of(
+        List<OreConfiguration.TargetBlockState> NectariumOres = List.of(
                 OreConfiguration.target(stoneReplaceables, YummyBlocks.NECTARIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, YummyBlocks.DEEPSLATE_NECTARIUM_ORE.get().defaultBlockState())
         );
 
-        register(context, FANCY_DIAMOND_ORE_SMALL, Feature.ORE, new OreConfiguration(FancyDiamondOres, 4, 0.5F));
-        register(context, FANCY_DIAMOND_ORE_LARGE, Feature.ORE, new OreConfiguration(FancyDiamondOres, 12, 0.7F));
-        register(context, FANCY_DIAMOND_ORE_BURIED, Feature.ORE, new OreConfiguration(FancyDiamondOres, 8, 0.0F));
+        register(context, NECTARIUM_ORE_SMALL, Feature.ORE, new OreConfiguration(NectariumOres, 4, 0.5F));
+        register(context, NECTARIUM_ORE_LARGE, Feature.ORE, new OreConfiguration(NectariumOres, 12, 0.7F));
+        register(context, NECTARIUM_ORE_BURIED, Feature.ORE, new OreConfiguration(NectariumOres, 8, 0.0F));
 
     }
 

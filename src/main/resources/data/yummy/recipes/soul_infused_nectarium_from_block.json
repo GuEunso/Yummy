@@ -2,11 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "yummy:soul_infused_fancy_diamond_block"
+            "item": "yummy:soul_infused_nectarium_block"
         }
     ],
     "result": {
-        "item": "yummy:soul_infused_fancy_diamond",
+        "item": "yummy:soul_infused_nectarium",
         "count": 9
     }
 }

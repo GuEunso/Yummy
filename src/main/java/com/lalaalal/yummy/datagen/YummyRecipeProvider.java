@@ -42,7 +42,7 @@ public class YummyRecipeProvider extends RecipeProvider implements IConditionBui
         soulinfusedSmithing(consumer, YummyItems.PURIFIED_SOUL_SWORD.get(), YummyItems.SOUL_INFUSED_DIAMOND.get(), RecipeCategory.MISC, YummyItems.SOUL_INFUSED_DIAMOND_SWORD.get());
         soulinfusedSmithing(consumer, YummyItems.PURIFIED_SOUL_SWORD.get(), YummyItems.SOUL_INFUSED_LAPIS.get(), RecipeCategory.MISC, YummyItems.SOUL_INFUSED_LAPIS_SWORD.get());
         soulinfusedSmithing(consumer, YummyItems.PURIFIED_SOUL_SWORD.get(), YummyItems.SOUL_INFUSED_AMETHYST.get(), RecipeCategory.MISC, YummyItems.SOUL_INFUSED_AMETHYST_SWORD.get());
-        soulinfusedSmithing(consumer, YummyItems.PURIFIED_SOUL_SWORD.get(), YummyItems.SOUL_INFUSED_FANCY_DIAMOND.get(), RecipeCategory.MISC, YummyItems.SOUL_INFUSED_FANCY_DIAMOND_SWORD.get());
+        soulinfusedSmithing(consumer, YummyItems.PURIFIED_SOUL_SWORD.get(), YummyItems.SOUL_INFUSED_NECTARIUM.get(), RecipeCategory.MISC, YummyItems.SOUL_INFUSED_NECTARIUM_SWORD.get());
         planksFromLog(consumer, YummyBlocks.EBONY_PLANKS.get(), YummyTags.EBONY_LOGS_ITEM_TAG, 4);
         woodFromLogs(consumer, YummyBlocks.EBONY_WOOD.get(), YummyBlocks.EBONY_LOG.get());
         woodenBoat(consumer, YummyItems.EBONY_BOAT_ITEM.get(), YummyBlocks.EBONY_PLANKS.get());

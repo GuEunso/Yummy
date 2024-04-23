@@ -20,9 +20,9 @@ import java.util.List;
 
 public class YummyPlacedFeatures {
     public static final ResourceKey<PlacedFeature> EBONY_PLACED_KEY = createKey("ebony_placed");
-    public static final ResourceKey<PlacedFeature> FANCY_DIAMOND_ORE_PLACED_KEY = createKey("fancy_diamond_ore_placed");
-    public static final ResourceKey<PlacedFeature> FANCY_DIAMOND_ORE_LARGE_PLACED_KEY = createKey("fancy_diamond_ore_large_placed");
-    public static final ResourceKey<PlacedFeature> FANCY_DIAMOND_ORE_BURIED_PLACED_KEY = createKey("fancy_diamond_ore_buried_placed");
+    public static final ResourceKey<PlacedFeature> NECTARIUM_ORE_PLACED_KEY = createKey("nectarium_ore_placed");
+    public static final ResourceKey<PlacedFeature> NECTARIUM_ORE_LARGE_PLACED_KEY = createKey("nectarium_ore_large_placed");
+    public static final ResourceKey<PlacedFeature> NECTARIUM_ORE_BURIED_PLACED_KEY = createKey("nectarium_ore_buried_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -30,11 +30,11 @@ public class YummyPlacedFeatures {
         register(context, EBONY_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.EBONY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2), YummyBlocks.EBONY_SAPLING.get())
         );
-        register(context, FANCY_DIAMOND_ORE_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.FANCY_DIAMOND_ORE_SMALL),
+        register(context, NECTARIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.NECTARIUM_ORE_SMALL),
                 commonOrePlacement(7, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
-        register(context, FANCY_DIAMOND_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.FANCY_DIAMOND_ORE_LARGE),
+        register(context, NECTARIUM_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.NECTARIUM_ORE_LARGE),
                 rareOrePlacement(9, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
-        register(context, FANCY_DIAMOND_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.FANCY_DIAMOND_ORE_BURIED),
+        register(context, NECTARIUM_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(YummyConfiguredFeatures.NECTARIUM_ORE_BURIED),
                 commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
 
 

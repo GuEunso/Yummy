@@ -18,7 +18,7 @@ public class EssenceDistilling {
         addDistillRecipe(Items.MOSS_BLOCK, 64, YummyItems.SOUL_INFUSED_EMERALD.get());
         addDistillRecipe(Items.AMETHYST_BLOCK, 64, YummyItems.SOUL_INFUSED_AMETHYST.get());
         addDistillRecipe(Items.HEART_OF_THE_SEA, 1, YummyItems.SOUL_INFUSED_LAPIS.get());
-        addDistillRecipe(Items.GOAT_HORN, 1, YummyItems.SOUL_INFUSED_FANCY_DIAMOND.get());
+        addDistillRecipe(Items.GOAT_HORN, 1, YummyItems.SOUL_INFUSED_NECTARIUM.get());
     }
 
     public static void addDistillRecipe(Item ingredient, int requiredCount, Item result) {
