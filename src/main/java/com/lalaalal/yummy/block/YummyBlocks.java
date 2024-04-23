@@ -23,17 +23,17 @@ import java.util.function.Supplier;
 public class YummyBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, YummyMod.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, YummyMod.MOD_ID);
-    public static final RegistryObject<Block> FANCY_DIAMOND_BLOCK = register("fancy_diamond_block",
+    public static final RegistryObject<Block> NECTARIUM_BLOCK = register("nectarium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .strength(5f, 6f)
                     .requiresCorrectToolForDrops())
             );
-    public static final RegistryObject<Block> FANCY_DIAMOND_ORE = register("fancy_diamond_ore",
+    public static final RegistryObject<Block> NECTARIUM_ORE = register("nectarium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f, 3f)
                     .requiresCorrectToolForDrops(), UniformInt.of(3, 7))
             );
-    public static final RegistryObject<Block> DEEPSLATE_FANCY_DIAMOND_ORE = register("deepslate_fancy_diamond_ore",
+    public static final RegistryObject<Block> DEEPSLATE_NECTARIUM_ORE = register("deepslate_nectarium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(4.5f, 3f)
                     .requiresCorrectToolForDrops()
@@ -159,7 +159,7 @@ public class YummyBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
                     .strength(5.0F, 6f)
                     .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> SOUL_INFUSED_FANCY_DIAMOND_BLOCK = FireresistRegister("soul_infused_fancy_diamond_block",
+    public static final RegistryObject<Block> SOUL_INFUSED_NECTARIUM_BLOCK = FireresistRegister("soul_infused_nectarium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)
                     .strength(5.0F, 6f)
                     .requiresCorrectToolForDrops()));

@@ -35,7 +35,7 @@ public class YummyBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(YummyBlocks.SOUL_CRAFTER.get());
-        add(YummyBlocks.DEEPSLATE_FANCY_DIAMOND_ORE.get(), block -> createOreDrop(block, YummyItems.FANCY_DIAMOND.get()));
+        add(YummyBlocks.DEEPSLATE_NECTARIUM_ORE.get(), block -> createOreDrop(block, YummyItems.NECTARIUM.get()));
         dropSelf(YummyBlocks.EBONY_BUTTON.get());
         add(YummyBlocks.EBONY_DOOR.get(), this::createDoorTable);
         dropSelf(YummyBlocks.EBONY_FENCE.get());
@@ -53,7 +53,7 @@ public class YummyBlockLootTables extends BlockLootSubProvider {
         dropSelf(YummyBlocks.EBONY_WOOD.get());
         dropSelf(YummyBlocks.HARD_EBONY_PLANKS.get());
         dropSelf(YummyBlocks.PURIFIED_SOUL_BLOCK.get());
-        dropSelf(YummyBlocks.FANCY_DIAMOND_BLOCK.get());
+        dropSelf(YummyBlocks.NECTARIUM_BLOCK.get());
         dropSelf(YummyBlocks.FAKE_GOLD_BLOCK.get());
         dropSelf(YummyBlocks.SOUL_INFUSED_REDSTONE_BLOCK.get());
         dropSelf(YummyBlocks.SOUL_INFUSED_COPPER_BLOCK.get());
@@ -62,9 +62,9 @@ public class YummyBlockLootTables extends BlockLootSubProvider {
         dropSelf(YummyBlocks.SOUL_INFUSED_DIAMOND_BLOCK.get());
         dropSelf(YummyBlocks.SOUL_INFUSED_LAPIS_BLOCK.get());
         dropSelf(YummyBlocks.SOUL_INFUSED_AMETHYST_BLOCK.get());
-        dropSelf(YummyBlocks.SOUL_INFUSED_FANCY_DIAMOND_BLOCK.get());
+        dropSelf(YummyBlocks.SOUL_INFUSED_NECTARIUM_BLOCK.get());
         dropSelf(YummyBlocks.PURIFIED_SOUL_METAL_BLOCK.get());
-        add(YummyBlocks.FANCY_DIAMOND_ORE.get(), block -> createOreDrop(block, YummyItems.FANCY_DIAMOND.get()));
+        add(YummyBlocks.NECTARIUM_ORE.get(), block -> createOreDrop(block, YummyItems.NECTARIUM.get()));
         dropSelf(YummyBlocks.STRIPPED_EBONY_LOG.get());
         dropSelf(YummyBlocks.STRIPPED_EBONY_WOOD.get());
         dropOther(YummyBlocks.EBONY_HANGING_SIGN.get(), YummyItems.EBONY_HANGING_SIGN.get());

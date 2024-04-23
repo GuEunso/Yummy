@@ -40,7 +40,7 @@ public class YummyItems {
 
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, YummyMod.MOD_ID);
 
-    public static final RegistryObject<Item> FANCY_DIAMOND = ITEMS.register("fancy_diamond",
+    public static final RegistryObject<Item> NECTARIUM = ITEMS.register("nectarium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EBONY_FRUIT = ITEMS.register("ebony_fruit",
             EbonyFruitItem::new);

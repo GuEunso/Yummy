@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "yummy:nectarium_ore"
+    },
+    "result": {
+        "item": "yummy:nectarium"
+    },
+    "experience": 0.7,
+    "cookingtime": 100
+}

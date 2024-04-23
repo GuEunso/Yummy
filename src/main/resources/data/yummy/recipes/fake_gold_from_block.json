@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yummy:fake_gold_block"
+        }
+    ],
+    "result": {
+        "item": "yummy:fake_gold_ingot",
+        "count": 9
+    }
+}

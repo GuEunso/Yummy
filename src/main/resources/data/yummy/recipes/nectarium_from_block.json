@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "yummy:nectarium_block"
+        }
+    ],
+    "result": {
+        "item": "yummy:nectarium",
+        "count": 9
+    }
+}

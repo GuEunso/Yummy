@@ -50,8 +50,8 @@ public class YummyConfiguredFeatures {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         List<OreConfiguration.TargetBlockState> FancyDiamondOres = List.of(
-                OreConfiguration.target(stoneReplaceables, YummyBlocks.FANCY_DIAMOND_ORE.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, YummyBlocks.DEEPSLATE_FANCY_DIAMOND_ORE.get().defaultBlockState())
+                OreConfiguration.target(stoneReplaceables, YummyBlocks.NECTARIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, YummyBlocks.DEEPSLATE_NECTARIUM_ORE.get().defaultBlockState())
         );
 
         register(context, FANCY_DIAMOND_ORE_SMALL, Feature.ORE, new OreConfiguration(FancyDiamondOres, 4, 0.5F));
