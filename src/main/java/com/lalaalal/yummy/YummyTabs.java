@@ -42,12 +42,13 @@ public class YummyTabs {
                 entries.accept(YummyBlocks.HARD_EBONY_PLANKS.get());
                 entries.accept(YummyBlocks.EBONY_LEAVES.get());
                 entries.accept(YummyBlocks.EBONY_SAPLING.get());
-                entries.accept(YummyItems.EBONY_FRUIT.get());
+                entries.accept(YummyItems.SPEAR_OF_LONGINUS.get());
                 entries.accept(YummyBlocks.SOUL_CRAFTER.get());
-                entries.accept(YummyItems.NECTARIUM.get());
+                entries.accept(YummyItems.BUNNY_CHEST_ITEM.get());
                 entries.accept(YummyItems.SPEAR.get());
                 entries.accept(YummyItems.MIGHTY_HOLY_SPEAR.get());
                 entries.accept(YummyItems.EBONY_SWORD.get());
+                entries.accept(YummyItems.GOD_BLOOD.get());
                 entries.accept(YummyItems.SOUL_INFUSED_REDSTONE_SWORD.get());
                 entries.accept(YummyItems.SOUL_INFUSED_COPPER_SWORD.get());
                 entries.accept(YummyItems.SOUL_INFUSED_GOLDEN_SWORD.get());
@@ -75,8 +76,6 @@ public class YummyTabs {
                 entries.accept(YummyBlocks.SOUL_INFUSED_AMETHYST_BLOCK.get());
                 entries.accept(YummyBlocks.SOUL_INFUSED_NECTARIUM_BLOCK.get());
                 entries.accept(YummyBlocks.PURIFIED_SOUL_METAL_BLOCK.get());
-                entries.accept(YummyItems.GOD_BLOOD.get());
-                entries.accept(YummyItems.BUNNY_CHEST_ITEM.get());
                 entries.accept(YummyItems.HEROBRINE_SPAWN_EGG.get());
                 entries.accept(YummyItems.HEROBRINE_PHASE1_DISC.get());
                 entries.accept(YummyItems.HEROBRINE_PHASE2_DISC.get());
@@ -85,6 +84,8 @@ public class YummyTabs {
                 entries.accept(YummyItems.METEOR_STAFF.get());
                 entries.accept(YummyBlocks.NECTARIUM_ORE.get());
                 entries.accept(YummyBlocks.DEEPSLATE_NECTARIUM_ORE.get());
+                entries.accept(YummyBlocks.NECTARIUM_BLOCK.get());
+                entries.accept(YummyItems.NECTARIUM.get());
                 entries.accept(YummyBlocks.HEROBRINE_SPAWNER_BLOCK.get());
                 entries.accept(YummyBlocks.POLLUTED_BLOCK.get());
                 entries.accept(YummyBlocks.CORRUPTED_POLLUTED_BLOCK.get());
@@ -95,9 +96,8 @@ public class YummyTabs {
                 entries.accept(YummyItems.PURIFIED_SOUL_LEGGINGS.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_BOOTS.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_UPGRADE_SMITHING_TEMPLATE.get());
-                entries.accept(YummyBlocks.NECTARIUM_BLOCK.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_SHARD.get());
-                entries.accept(YummyItems.SPEAR_OF_LONGINUS.get());
+                entries.accept(YummyItems.EBONY_FRUIT.get());
                 entries.accept(YummyItems.FAKE_GOLD_INGOT.get());
                 entries.accept(YummyBlocks.FAKE_GOLD_BLOCK.get());
                 entries.accept(YummyBlocks.AMETHYST_SHARD_BLOCK.get());
