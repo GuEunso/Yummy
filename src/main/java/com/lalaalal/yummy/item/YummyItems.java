@@ -7,7 +7,6 @@ import com.lalaalal.yummy.sound.YummySounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,9 +40,7 @@ public class YummyItems {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, YummyMod.MOD_ID);
 
     public static final RegistryObject<Item> NECTARIUM = ITEMS.register("nectarium",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> EBONY_FRUIT = ITEMS.register("ebony_fruit",
-            EbonyFruitItem::new);
+            Nectarium::new);
 
     public static final RegistryObject<Item> PURIFIED_SOUL_METAL = ITEMS.register("purified_soul_metal",
             () -> new Item(new Item.Properties().fireResistant()));

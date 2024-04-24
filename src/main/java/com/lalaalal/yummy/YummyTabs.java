@@ -97,7 +97,6 @@ public class YummyTabs {
                 entries.accept(YummyItems.PURIFIED_SOUL_BOOTS.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_UPGRADE_SMITHING_TEMPLATE.get());
                 entries.accept(YummyItems.PURIFIED_SOUL_SHARD.get());
-                entries.accept(YummyItems.EBONY_FRUIT.get());
                 entries.accept(YummyItems.FAKE_GOLD_INGOT.get());
                 entries.accept(YummyBlocks.FAKE_GOLD_BLOCK.get());
                 entries.accept(YummyBlocks.AMETHYST_SHARD_BLOCK.get());
