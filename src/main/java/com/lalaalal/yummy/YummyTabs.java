@@ -10,10 +10,14 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+@Mod.EventBusSubscriber(modid = YummyMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
 public class YummyTabs {
     private static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, YummyMod.MOD_ID);
@@ -82,10 +86,6 @@ public class YummyTabs {
                 entries.accept(YummyItems.HEROBRINE_PHASE3_DISC.get());
                 entries.accept(YummyItems.FLOATING_STICK.get());
                 entries.accept(YummyItems.METEOR_STAFF.get());
-                entries.accept(YummyBlocks.NECTARIUM_ORE.get());
-                entries.accept(YummyBlocks.DEEPSLATE_NECTARIUM_ORE.get());
-                entries.accept(YummyBlocks.NECTARIUM_BLOCK.get());
-                entries.accept(YummyItems.NECTARIUM.get());
                 entries.accept(YummyBlocks.HEROBRINE_SPAWNER_BLOCK.get());
                 entries.accept(YummyBlocks.POLLUTED_BLOCK.get());
                 entries.accept(YummyBlocks.CORRUPTED_POLLUTED_BLOCK.get());
@@ -99,12 +99,29 @@ public class YummyTabs {
                 entries.accept(YummyItems.PURIFIED_SOUL_SHARD.get());
                 entries.accept(YummyItems.FAKE_GOLD_INGOT.get());
                 entries.accept(YummyBlocks.FAKE_GOLD_BLOCK.get());
-                entries.accept(YummyBlocks.AMETHYST_SHARD_BLOCK.get());
             })
             .build()
     );
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
+    }
+    @SubscribeEvent
+    public static void addToExistingTabs(BuildCreativeModeTabContentsEvent event) {
+        ResourceKey<CreativeModeTab> tabKey = event.getTabKey();
+        if (tabKey == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.getEntries().putAfter(new ItemStack(Blocks.DEEPSLATE_DIAMOND_ORE), new ItemStack(YummyBlocks.NECTARIUM_ORE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(YummyBlocks.NECTARIUM_ORE.get()), new ItemStack(YummyBlocks.DEEPSLATE_NECTARIUM_ORE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+        if (tabKey == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.getEntries().putAfter(new ItemStack(Blocks.DIAMOND_BLOCK), new ItemStack(YummyBlocks.NECTARIUM_BLOCK.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(Blocks.AMETHYST_BLOCK), new ItemStack(YummyBlocks.AMETHYST_SHARD_BLOCK.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+        if (tabKey == CreativeModeTabs.INGREDIENTS) {
+            event.getEntries().putAfter(new ItemStack(Items.DIAMOND), new ItemStack(YummyItems.NECTARIUM.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+        if (tabKey == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.getEntries().putAfter(new ItemStack(Items.ENCHANTED_GOLDEN_APPLE), new ItemStack(YummyItems.NECTARIUM.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+       }
     }
 }
