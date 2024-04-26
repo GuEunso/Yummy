@@ -1,6 +1,7 @@
 package com.lalaalal.yummy.world.inventory;
 
 import com.lalaalal.yummy.block.entity.SoulCrafterBlockEntity;
+import com.lalaalal.yummy.item.YummyItems;
 import com.lalaalal.yummy.item.distill.EssenceDistilling;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
@@ -35,7 +36,7 @@ public class SoulCraftingMenu extends AbstractContainerMenu {
         this.containerData = containerData;
 
         this.addSlot(new ItemPredicateSlot(container, EssenceDistilling::isIngredient, INGREDIENT_SLOT, 56, 17));
-        this.addSlot(new ItemPredicateSlot(container, item -> item == Items.BLAZE_ROD, FUEL_SLOT, 29, 57));
+        this.addSlot(new ItemPredicateSlot(container, item -> item == YummyItems.PURIFIED_SOUL_SHARD.get(), FUEL_SLOT, 26, 47));
         this.addSlot(new ItemPredicateSlot(container, item -> false, RESULT_SLOT, 116, 35));
 
         addPlayerInventory(inventory);
@@ -60,7 +61,7 @@ public class SoulCraftingMenu extends AbstractContainerMenu {
                 if (!this.moveItemStackTo(sourceStack, INGREDIENT_SLOT, INGREDIENT_SLOT + 1, false))
                     return ItemStack.EMPTY;
             }
-            if (sourceStack.is(Items.BLAZE_ROD)) {
+            if (sourceStack.is(YummyItems.PURIFIED_SOUL_SHARD.get())) {
                 if (!this.moveItemStackTo(sourceStack, FUEL_SLOT, FUEL_SLOT + 1, false))
                     return ItemStack.EMPTY;
             }
@@ -95,8 +96,8 @@ public class SoulCraftingMenu extends AbstractContainerMenu {
     }
 
     public int getScaledProgress() {
-        int progress = containerData.get(SoulCrafterBlockEntity.DATA_PROGRESS);
-        int maxProgress = containerData.get(SoulCrafterBlockEntity.DATA_MAX_PROGRESS);
+        int progress = containerData.get(SoulCrafterBlockEntity.DATA_DISTILL_PROGRESS);
+        int maxProgress = containerData.get(SoulCrafterBlockEntity.DATA_MAX_DISTILL_PROGRESS);
         int progressArrowSize = 24;
 
         return maxProgress != 0 ? progress * progressArrowSize / maxProgress : 0;
@@ -105,9 +106,9 @@ public class SoulCraftingMenu extends AbstractContainerMenu {
     public int getScaledDistillProgress() {
         int progress = containerData.get(SoulCrafterBlockEntity.DATA_DISTILL_PROGRESS);
         int maxProgress = containerData.get(SoulCrafterBlockEntity.DATA_MAX_DISTILL_PROGRESS);
-        int progressBubbleSize = 29;
+        int progressFireSize = 14;
 
-        return maxProgress != 0 ? progress * progressBubbleSize / maxProgress : 0;
+        return maxProgress != 0 ? progress * progressFireSize / maxProgress : 0;
     }
 
     public int getScaledFuelDistillProgress() {
@@ -117,6 +118,7 @@ public class SoulCraftingMenu extends AbstractContainerMenu {
 
         return maxProgress != 0 ? progress * progressBubbleSize / maxProgress : 0;
     }
+
 
     private static class ItemPredicateSlot extends Slot {
         private final Predicate<Item> predicate;

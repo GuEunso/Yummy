@@ -34,13 +34,17 @@ public class SoulCraftingScreen extends AbstractContainerScreen<SoulCraftingMenu
 
     private void renderDistillProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if (menu.isDistilling()) {
-            guiGraphics.blit(TEXTURE_LOCATION, x + 56, y + 65 - menu.getScaledDistillProgress(), 176, 33 - menu.getScaledDistillProgress(), 12, menu.getScaledDistillProgress() + 1);
-            guiGraphics.blit(TEXTURE_LOCATION, x + 54, y + 67, 176, 0, 18 - menu.getScaledFuelDistillProgress(), 4);
+            int k = this.menu.getScaledDistillProgress();
+            guiGraphics.blit(TEXTURE_LOCATION, x + 57, y + 49 - k, 176, 12 - k, 14, k + 1);
+            guiGraphics.blit(TEXTURE_LOCATION, x + 55, y + 53, 176, 31, 17 - menu.getScaledFuelDistillProgress(), 4);
         }
     }
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
-        guiGraphics.blit(TEXTURE_LOCATION, x + 79, y + 35, 176, 33, menu.getScaledProgress() + 1, 16);
+        if (menu.isDistilling()) {
+            guiGraphics.blit(TEXTURE_LOCATION, x + 79, y + 35, 176, 14, 1 + menu.getScaledProgress(), 16);
+            //guiGraphics.blit(TEXTURE_LOCATION, x + 79, y + 35, 176, 22, menu.getScaledProgress() + 1, 16);
+        }
     }
 
 

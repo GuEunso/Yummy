@@ -1,6 +1,7 @@
 package com.lalaalal.yummy.block.entity;
 
 import com.lalaalal.yummy.block.SoulCrafterBlock;
+import com.lalaalal.yummy.item.YummyItems;
 import com.lalaalal.yummy.item.distill.EssenceDistilling;
 import com.lalaalal.yummy.world.inventory.SoulCraftingMenu;
 import net.minecraft.core.BlockPos;
@@ -160,7 +161,7 @@ public class SoulCrafterBlockEntity extends BaseContainerBlockEntity implements 
         if (distillProgress > 0)
             return true;
         ItemStack fuel = items.get(FUEL_SLOT);
-        if (!fuel.is(Items.BLAZE_ROD))
+        if (!fuel.is(YummyItems.PURIFIED_SOUL_SHARD.get()))
             return false;
         ItemStack ingredient = items.get(INGREDIENT_SLOT);
         ItemStack result = items.get(RESULT_SLOT);
