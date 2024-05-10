@@ -84,6 +84,7 @@ public class YummyClientEventBus {
         event.registerEntityRenderer(YummyEntities.SPEAR_OF_LONGINUS.get(), ThrownSpearOfLonginusRenderer::new);
         event.registerEntityRenderer(YummyEntities.FLOATING_BLOCK_ENTITY.get(), FloatingBlockRenderer::new);
         event.registerEntityRenderer(YummyEntities.TRANSFORMING_BLOCK_ENTITY.get(), FloatingBlockRenderer::new);
+        event.registerEntityRenderer(YummyEntities.METEOR.get(), MeteorRenderer::new);
         event.registerEntityRenderer(YummyEntities.NARAKA_MAGIC_CIRCLE.get(), FlatImageEntityRenderer::new);
         event.registerEntityRenderer(YummyEntities.NARAKA_STORM.get(), FlatImageEntityRenderer::new);
         event.registerEntityRenderer(YummyEntities.FRACTURE_ENTITY.get(), FractureEntityRenderer::new);

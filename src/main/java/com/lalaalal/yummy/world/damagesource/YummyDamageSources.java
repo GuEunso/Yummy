@@ -27,11 +27,6 @@ public class YummyDamageSources {
         return new ItemDamageSource(damageTypes.getHolderOrThrow(YummyDamageTypes.THROWN_SPEAR_KEY), source, itemStack);
     }
 
-    public static DamageSource godEchoSword(LivingEntity source) {
-        Registry<DamageType> damageTypes = source.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE);
-        return new DamageSource(damageTypes.getHolderOrThrow(YummyDamageTypes.GOD_ECHO_SWORD_KEY), source);
-    }
-
     public static DamageSource herobrineMark(Level level, MobEffect mobEffect) {
         Registry<DamageType> damageTypes = level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE);
         return new EffectDamageSource(damageTypes.getHolderOrThrow(YummyDamageTypes.HEROBRINE_MARK_KEY), mobEffect);
