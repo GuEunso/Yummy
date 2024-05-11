@@ -4,13 +4,10 @@ import com.lalaalal.yummy.YummyMod;
 import com.lalaalal.yummy.block.YummyBlocks;
 import com.lalaalal.yummy.block.entity.HerobrineSpawnerBlockEntity;
 import com.lalaalal.yummy.block.entity.YummyBlockEntities;
-import com.lalaalal.yummy.effect.Echo;
 import com.lalaalal.yummy.effect.YummyEffects;
 import com.lalaalal.yummy.entity.Herobrine;
-import com.lalaalal.yummy.world.damagesource.YummyDamageSources;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -18,7 +15,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
@@ -50,17 +46,6 @@ public class YummyForgeEvent {
         }
     }
 
-    @SubscribeEvent
-    public static void echoCheck(LivingHurtEvent event) {
-        LivingEntity livingEntity = event.getEntity();
-        MobEffectInstance instance = livingEntity.getEffect(YummyEffects.ECHO.get());
-        if (instance != null && instance.getAmplifier() < Echo.MAX_AMPLIFIER) {
-            float multiple = 0.1f * instance.getAmplifier();
-            float amount = event.getAmount() * multiple;
-            if (event.getAmount() != Float.MAX_VALUE)
-                livingEntity.hurt(YummyDamageSources.echoMark(livingEntity.level(), YummyEffects.ECHO.get()), amount);
-        }
-    }
 
     @SubscribeEvent
     public static void onPlaceBlock(BlockEvent.EntityPlaceEvent event) {

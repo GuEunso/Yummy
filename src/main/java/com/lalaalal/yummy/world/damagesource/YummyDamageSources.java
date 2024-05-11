@@ -32,10 +32,6 @@ public class YummyDamageSources {
         return new EffectDamageSource(damageTypes.getHolderOrThrow(YummyDamageTypes.HEROBRINE_MARK_KEY), mobEffect);
     }
 
-    public static DamageSource echoMark(Level level, MobEffect mobEffect) {
-        Registry<DamageType> damageTypes = level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE);
-        return new EffectDamageSource(damageTypes.getHolderOrThrow(YummyDamageTypes.ECHO_MARK_KEY), mobEffect);
-    }
 
     public static DamageSource simple(Level level, String id, LivingEntity source) {
         Registry<DamageType> damageTypes = level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE);

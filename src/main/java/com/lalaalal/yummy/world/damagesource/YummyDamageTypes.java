@@ -12,7 +12,6 @@ public class YummyDamageTypes {
     public static final ResourceKey<DamageType> THROWN_SPEAR_OF_LONGINUS_KEY = registerKey("thrown_spear_of_longinus");
     public static final ResourceKey<DamageType> THROWN_SPEAR_KEY = registerKey("thrown_spear");
     public static final ResourceKey<DamageType> HEROBRINE_MARK_KEY = registerKey("herobrine_mark");
-    public static final ResourceKey<DamageType> ECHO_MARK_KEY = registerKey("echo_mark");
     public static final ResourceKey<DamageType> SIMPLE_DAMAGE_TYPE_KEY = registerKey("simple_damage_type");
 
     public static void bootstrap(BootstapContext<DamageType> context) {
@@ -20,7 +19,6 @@ public class YummyDamageTypes {
         context.register(THROWN_SPEAR_OF_LONGINUS_KEY, new DamageType(YummyMod.MOD_ID + ".thrown_spear_of_longinus", 0.1f));
         context.register(THROWN_SPEAR_KEY, new DamageType(YummyMod.MOD_ID + ".thrown_spear", 0.1f));
         context.register(HEROBRINE_MARK_KEY, new DamageType(YummyMod.MOD_ID + ".herobrine_mark", 0.1f));
-        context.register(ECHO_MARK_KEY, new DamageType(YummyMod.MOD_ID + ".echo_mark", 0.1f));
         context.register(SIMPLE_DAMAGE_TYPE_KEY, new DamageType(YummyMod.MOD_ID + ".simple_damage_type", 0.1f));
     }
 
