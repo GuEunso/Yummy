@@ -2,19 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "yummy:purified_soul_shard"
+            "item": "minecraft:ghast_tear"
+        },
+        {
+            "item": "minecraft:ghast_tear"
+        },
+        {
+            "item": "minecraft:ghast_tear"
+        },
+        {
+            "item": "minecraft:ghast_tear"
         },
         {
             "item": "yummy:purified_soul_shard"
         },
         {
-            "item": "yummy:purified_soul_shard"
+            "item": "minecraft:netherite_scrap"
         },
         {
-            "item": "yummy:purified_soul_shard"
+            "item": "minecraft:netherite_scrap"
         },
         {
-            "item": "minecraft:netherite_ingot"
+            "item": "minecraft:netherite_scrap"
+        },
+        {
+            "item": "minecraft:netherite_scrap"
         }
     ],
     "result": {

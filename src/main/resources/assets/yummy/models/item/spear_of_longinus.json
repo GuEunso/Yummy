@@ -2,7 +2,7 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "base": {
-    "parent": "yummy:item/spear_of_longinus_3d"
+    "parent": "yummy:item/spear_of_longinus_inventory_3d"
   },
   "perspectives": {
     "gui": {
