@@ -8,10 +8,9 @@ import com.lalaalal.yummy.entity.YummyEntities;
 import com.lalaalal.yummy.item.YummyItems;
 import com.lalaalal.yummy.particle.YummyParticles;
 import com.lalaalal.yummy.sound.YummySounds;
+import com.lalaalal.yummy.structure.YummyStructures;
 import com.lalaalal.yummy.world.inventory.YummyMenuTypes;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FireBlock;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -37,6 +36,8 @@ public class YummyMod
         YummySounds.register(modEventBus);
         YummyMenuTypes.register(modEventBus);
         YummyTabs.register(modEventBus);
+        YummyStructures.register(modEventBus);
+
     }
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(YummyBlocks::registerFlammability);

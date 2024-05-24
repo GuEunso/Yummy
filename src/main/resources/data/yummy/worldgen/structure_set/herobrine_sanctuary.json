@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "yummy:herobrine_sanctuary",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 80,
+    "separation": 20,
+    "salt": 1664683963,
+    "super_exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "yummy:herobrine_sanctuary_avoid"
+    }
+  }
+}
